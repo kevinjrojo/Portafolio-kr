@@ -6,7 +6,7 @@ export default function Hero() {
       style={{ minHeight: "calc(100vh - 61px)" }}
     >
       {/* Este div interno es el que se centra verticalmente */}
-      <div className="flex flex-col gap-8 py-16 pr-12 my-auto">
+      <div className="flex flex-col gap-8 py-16 pr-12 m-auto">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 w-fit text-[10px] font-medium tracking-[2px] uppercase text-emerald-400/80 bg-emerald-400/[0.06] border border-emerald-400/20 px-4 py-1.5 rounded-full">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -59,16 +59,16 @@ export default function Hero() {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-5 ">
           <a
             href="#proyectos"
-            className="text-sm font-semibold bg-[#7c5cfc] text-white px-7 py-3.5 rounded-xl hover:bg-[#6a4aec] transition-all duration-200 hover:-translate-y-px"
+            className="text-sm font-semibold bg-[#7c5cfc] text-white px-3 py-3.5 rounded-xl hover:bg-[#6a4aec] transition-all duration-200 hover:-translate-y-px"
           >
             Ver proyectos
           </a>
           <a
             href="#contacto"
-            className="text-sm text-white/45 border border-white/[0.12] px-7 py-3.5 rounded-xl hover:text-white/80 hover:border-white/[0.28] transition-colors duration-200"
+            className="text-sm text-white/45 border border-white/[0.12] px-3 py-3.5 rounded-xl hover:text-white/80 hover:border-white/[0.28] transition-colors duration-200"
           >
             Hablemos →
           </a>

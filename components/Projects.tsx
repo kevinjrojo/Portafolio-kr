@@ -3,7 +3,7 @@ import { projects } from "@/data/projects";
 export default function Projects() {
   return (
     <div
-      className="flex flex-col gap-4 py-16 pl-12 overflow-y-auto "
+      className="flex flex-col gap-4 py-16 pr-2 pl-2 overflow-y-auto m-auto "
       style={{ minHeight: "calc(100vh - 61px)" }}
     >
       {/* Header */}
