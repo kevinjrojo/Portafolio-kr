@@ -2,28 +2,36 @@ import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col gap-3 p-6">
-      <div className="flex items-center justify-between mb-1">
-        <span className="text-[10px] tracking-[1.5px] uppercase text-white/20">
+    <div
+      className="flex flex-col gap-4 py-16 pl-12 overflow-y-auto "
+      style={{ minHeight: "calc(100vh - 61px)" }}
+    >
+      {/* Header */}
+      <div className="flex items-center justify-between mb-2">
+        <span className="text-[15px] tracking-[2.5px] uppercase text-white/20 font-medium">
           Proyectos
         </span>
-        <span className="text-[10px] text-[#7c5cfc]/60 cursor-pointer hover:text-[#7c5cfc] transition-colors">
+        <a
+          href="#"
+          className="text-[15px] text-[#7c5cfc]/60 hover:text-[#7c5cfc] transition-colors"
+        >
           Ver todos →
-        </span>
+        </a>
       </div>
 
       {projects.map((project, i) => (
         <div
           key={project.id}
-          className={`rounded-xl p-4 border flex flex-col gap-3 ${
+          className={`rounded-[18px] p-[22px] border flex flex-col gap-4 transition-all duration-200 hover:-translate-y-0.5 ${
             i === 0
-              ? "bg-[#7c5cfc]/[0.05] border-[#7c5cfc]/25"
-              : "bg-white/[0.03] border-white/[0.07]"
+              ? "bg-[#7c5cfc]/[0.05] border-[#7c5cfc]/20 hover:border-[#7c5cfc]/38"
+              : "bg-white/[0.025] border-white/[0.07] hover:border-white/[0.14]"
           }`}
         >
+          {/* Top */}
           <div className="flex items-center justify-between">
             <div
-              className={`w-9 h-9 rounded-lg flex items-center justify-center text-lg ${
+              className={`w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0 ${
                 i === 0 ? "bg-[#7c5cfc]/15" : "bg-emerald-400/10"
               }`}
             >
@@ -35,32 +43,36 @@ export default function Projects() {
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[9px] font-medium px-2.5 py-1 rounded-full bg-emerald-400/10 text-emerald-400/80 border border-emerald-400/20 hover:bg-emerald-400/20 transition-colors"
+                className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-emerald-400/10 text-emerald-400/85 border border-emerald-400/20 hover:bg-emerald-400/20 transition-colors whitespace-nowrap"
               >
                 Demo disponible →
               </a>
             ) : (
-              <span className="text-[9px] font-medium px-2.5 py-1 rounded-full bg-white/[0.05] text-white/30 border border-white/[0.1]">
+              <span className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-white/[0.05] text-white/30 border border-white/[0.1] whitespace-nowrap">
                 Ver capturas →
               </span>
             )}
           </div>
 
+          {/* Info */}
           <div>
-            <p className="text-sm font-medium text-white/85 mb-1">
+            <p
+              className="text-base font-bold text-white/90 mb-1.5"
+              style={{ fontFamily: "var(--font-syne)" }}
+            >
               {project.name}
             </p>
-            <p className="text-[11px] text-white/30 leading-relaxed">
+            <p className="text-[13px] text-white/35 leading-relaxed">
               {project.description}
             </p>
           </div>
 
           {/* Stack */}
-          <div className="flex flex-wrap gap-1.5">
+          <div className="flex flex-wrap gap-2">
             {project.stack.map((s) => (
               <span
                 key={s}
-                className="text-[9px] px-2 py-0.5 rounded bg-white/[0.04] text-white/20 border border-white/[0.06]"
+                className="text-[11px] px-2.5 py-1 rounded-lg bg-white/[0.05] text-white/30 border border-white/[0.07]"
               >
                 {s}
               </span>
