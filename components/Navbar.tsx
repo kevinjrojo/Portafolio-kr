@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between py-4">
         {/* Logo — siempre visible */}
         <span
-          className="text-white font-extrabold text-base tracking-tight"
+          className="text-white font-semibold text-base tracking-tight"
           style={{ fontFamily: "var(--font-syne)" }}
         >
           KR<span className="text-[#7c5cfc]">.</span>DEV
@@ -81,7 +81,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="text-xs font-medium text-[#a48dfd] bg-[#7c5cfc]/15 border border-[#7c5cfc]/30 px-4 py-2 rounded-lg text-center hover:bg-[#7c5cfc]/25 transition-colors w-fit"
           >
-            Hablemos
+            CV
           </Link>
         </div>
       )}

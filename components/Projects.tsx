@@ -2,10 +2,7 @@ import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <div
-      className="flex flex-col gap-4 py-16 pr-2 pl-2 overflow-y-auto m-auto "
-      style={{ minHeight: "calc(100vh - 61px)" }}
-    >
+    <div className="flex flex-col gap-4 py-16 pr-2 pl-2 overflow-y-auto m-auto ">
       {/* Header */}
       <div className="flex items-center justify-between mb-2">
         <span className="text-[15px] tracking-[2.5px] uppercase text-white/20 font-medium">
@@ -22,16 +19,16 @@ export default function Projects() {
       {projects.map((project, i) => (
         <div
           key={project.id}
-          className={`rounded-[18px] p-[22px] border flex flex-col gap-4 transition-all duration-200 hover:-translate-y-0.5 ${
+          className={`rounded-[18px] p-5.5 border flex flex-col gap-4 transition-all duration-200 hover:-translate-y-0.5 ${
             i === 0
-              ? "bg-[#7c5cfc]/[0.05] border-[#7c5cfc]/20 hover:border-[#7c5cfc]/38"
-              : "bg-white/[0.025] border-white/[0.07] hover:border-white/[0.14]"
+              ? "bg-[#7c5cfc]/5 border-[#7c5cfc]/20 hover:border-[#7c5cfc]/38"
+              : "bg-white/2.5 border-white/[0.07] hover:border-white/[0.14]"
           }`}
         >
           {/* Top */}
           <div className="flex items-center justify-between">
             <div
-              className={`w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0 ${
+              className={`w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0 ${
                 i === 0 ? "bg-[#7c5cfc]/15" : "bg-emerald-400/10"
               }`}
             >
@@ -48,7 +45,7 @@ export default function Projects() {
                 Demo disponible →
               </a>
             ) : (
-              <span className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-white/[0.05] text-white/30 border border-white/[0.1] whitespace-nowrap">
+              <span className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-white/5 text-white/30 border border-white/10 whitespace-nowrap">
                 Ver capturas →
               </span>
             )}
@@ -72,7 +69,7 @@ export default function Projects() {
             {project.stack.map((s) => (
               <span
                 key={s}
-                className="text-[11px] px-2.5 py-1 rounded-lg bg-white/[0.05] text-white/30 border border-white/[0.07]"
+                className="text-[11px] px-2.5 py-1 rounded-lg bg-white/5 text-white/30 border border-white/[0.07]"
               >
                 {s}
               </span>

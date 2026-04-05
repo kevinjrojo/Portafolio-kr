@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tu Nombre — Fullstack Developer",
+  title: "Kevin Rojo — Fullstack Developer",
   description:
     "Fullstack Developer especializado en ecommerce y software a medida. Next.js, React, Tailwind y Strapi.",
 };
