@@ -1,4 +1,5 @@
 import { projects } from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -36,17 +37,21 @@ export default function Projects() {
             </div>
 
             {project.type === "demo" ? (
-              <a
-                href={project.demoUrl}
-                target="_blank"
+              <Link
+                href={`/proyectos/${project.slug}`}
                 rel="noopener noreferrer"
                 className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-emerald-400/10 text-emerald-400/85 border border-emerald-400/20 hover:bg-emerald-400/20 transition-colors whitespace-nowrap"
               >
-                Demo disponible →
-              </a>
+                Ver detalles →
+              </Link>
             ) : (
               <span className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-white/5 text-white/30 border border-white/10 whitespace-nowrap">
-                Ver capturas →
+                <Link
+                  href={`/proyectos/${project.slug}`}
+                  className="hover:text-white/80 transition-colors"
+                >
+                  Ver detalles →
+                </Link>
               </span>
             )}
           </div>
