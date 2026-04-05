@@ -29,7 +29,7 @@ export default function Navbar() {
             <li key={l.href}>
               <Link
                 href={l.href}
-                className="text-xm text-white/30 hover:text-white/70 transition-colors duration-200"
+                className="text-xm text-white/50 hover:text-white/80 transition-colors duration-200"
               >
                 {l.label}
               </Link>

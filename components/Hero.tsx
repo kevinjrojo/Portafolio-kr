@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     /* Este div ocupa toda la altura y tiene el border-r — NO se toca */
-    <div className="flex flex-col border-r border-white/6">
+    <div className="flex flex-col md:border-r border-white/6 ">
       {/* Este div interno es el que se centra verticalmente */}
       <div className="flex flex-col gap-8 py-16 pr-12 m-auto">
         {/* Badge */}
