@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col gap-4 pr-2 pl-2 py-10 overflow-y-auto m-auto ">
+    <div className="flex flex-col gap-4 pr-2 pl-2 py-20 overflow-y-auto m-auto ">
       {/* Header */}
       <div className="flex items-center justify-between mb-2  ">
         <span className="text-[15px] tracking-[2.5px] uppercase text-white/40 font-medium">
