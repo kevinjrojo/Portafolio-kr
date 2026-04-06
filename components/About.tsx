@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="sobre-mi" className="border-t border-white/5 py-24 px-6">
+    <section id="sobre-mi" className="border-t border-white/5 py-16 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Section label */}
-        <p className="text-[11px] tracking-[2.5px] uppercase text-white/20 font-medium mb-16">
+        <p className="text-[18px] tracking-[2.5px] uppercase text-white/50 font-medium mb-5">
           Sobre mí
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.6fr] gap-12 md:gap-20 items-start">
           {/* LEFT — foto */}
-          <div className="relative w-full max-w-70 mx-auto md:mx-0">
+          <div className="relative w-full max-w-65 mx-auto md:mx-0">
             {/* Glow detrás */}
             <div className="absolute -inset-1 rounded-2xl bg-[#7c5cfc]/20 blur-xl" />
 
@@ -23,8 +23,8 @@ export default function About() {
                 {/* Cuando tengas la foto, reemplazá este bloque por:
                     <Image src="/tu-foto.jpg" alt="Kevin Rojo" fill className="object-cover" />
                 */}
-                <div className="flex flex-col items-center gap-3 select-none pointer-events-none">
-                  <div className="w-14 h-14 rounded-full bg-[#7c5cfc]/20 border border-[#7c5cfc]/30 flex items-center justify-center">
+                <div className="flex flex-col items-center gap-2.5 select-none pointer-events-none">
+                  <div className="w-10 h-10 rounded-full mt-1  bg-[#7c5cfc]/20 border border-[#7c5cfc]/30 flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-[#7c5cfc]/60"
                       fill="none"
@@ -43,8 +43,8 @@ export default function About() {
                     <Image
                       src="/images/foto.jpg"
                       alt="logo"
-                      width={260}
-                      height={100}
+                      width={230}
+                      height={90}
                     />
                   </span>
                 </div>

@@ -49,7 +49,7 @@ export default function ImageSlider({ images, projectName }: ImageSliderProps) {
           alt={`${projectName} — captura ${current + 1}`}
           fill
           className="object-cover transition-opacity duration-300"
-          sizes="(max-width: 768px) 200vw, 80vw"
+          sizes="(max-width: 668px) 200vw, 80vw"
         />
 
         {/* Overlay degradado sutil abajo */}

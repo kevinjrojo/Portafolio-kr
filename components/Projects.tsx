@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col gap-4 py-16 pr-2 pl-2 overflow-y-auto m-auto ">
+    <div className="flex flex-col gap-4 pr-2 pl-2 py-10 overflow-y-auto m-auto ">
       {/* Header */}
-      <div className="flex items-center justify-between mb-2">
-        <span className="text-[15px] tracking-[2.5px] uppercase text-white/20 font-medium">
+      <div className="flex items-center justify-between mb-2  ">
+        <span className="text-[15px] tracking-[2.5px] uppercase text-white/40 font-medium">
           Proyectos
         </span>
         <a
@@ -45,7 +45,7 @@ export default function Projects() {
                 Ver detalles →
               </Link>
             ) : (
-              <span className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-white/5 text-white/30 border border-white/10 whitespace-nowrap">
+              <span className="text-[10px] font-medium px-3 py-1.5 rounded-full bg-emerald-400/10 text-emerald-400/85 border border-emerald-400/20 hover:bg-emerald-400/20 transition-colors whitespace-nowrap">
                 <Link
                   href={`/proyectos/${project.slug}`}
                   className="hover:text-white/80 transition-colors"

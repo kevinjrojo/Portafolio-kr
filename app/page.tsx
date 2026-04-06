@@ -9,7 +9,10 @@ export default function Home() {
     <main className="min-h-screen bg-[#09090f]">
       <div className="max-w-full mx-auto px-6">
         <Navbar />
-        <section className="grid grid-cols-1 md:grid-cols-2" id="proyectos">
+        <section
+          className="grid grid-cols-1 md:grid-cols-2 p-10"
+          id="proyectos"
+        >
           <Hero />
           <Projects />
         </section>

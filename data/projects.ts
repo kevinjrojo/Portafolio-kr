@@ -15,13 +15,13 @@ export const projects: Project[] = [
   {
     id: 1,
     slug: "ecommerce-app",
-    name: "Ecommerce App",
+    name: "EHLinsumo",
     shortDescription:
       "Tienda online completa con carrito, pagos y panel de admin para emprendedores.",
     description:
-      "Plataforma de ecommerce desarrollada con Next.js y Strapi como CMS headless. Incluye catálogo de productos con filtros, carrito persistente, integración de pagos, panel de administración para gestionar stock y órdenes, y diseño responsive optimizado para conversión. El objetivo fue darle a emprendedores una solución lista para vender sin depender de plataformas genéricas.",
-    stack: ["Next.js", "Strapi", "PostgreSQL", "Tailwind CSS"],
-    icon: "🛒",
+      "Plataforma de ecommerce desarrollada con Next.js y Strapi como CMS headless. Incluye catálogo de productos con filtros, carrito persistente, integración de pagos, ",
+    stack: ["Next.js", "Strapi", "PostgreSQL", "Tailwind CSS", "Render"],
+    icon: "🦜",
     type: "demo",
     demoUrl: "https://ehlinsumo-frontend.vercel.app/",
     images: [
@@ -33,13 +33,13 @@ export const projects: Project[] = [
   {
     id: 2,
     slug: "software-empresarial",
-    name: "Software Empresarial",
+    name: "Inventario Micro",
     shortDescription:
       "Sistema interno con login, roles y base de datos para gestión empresarial.",
     description:
-      "Sistema de gestión interna desarrollado a medida para una empresa. Cuenta con autenticación segura, sistema de roles y permisos, módulos de gestión de datos, reportes exportables y una interfaz limpia pensada para el uso diario del equipo. La solución reemplazó procesos manuales en planillas, reduciendo errores y tiempo operativo.",
-    stack: ["React", "Node.js", "PostgreSQL", "Express"],
-    icon: "🏢",
+      "Sistema de gestión interna desarrollado a medida para una empresa. Cuenta con autenticación segura, sistema de roles y permisos, módulos de gestión de datos, ",
+    stack: ["Vanilla", "Supabase", "PostgreSQL", "Tailwind CSS"],
+    icon: "🔧",
     type: "images",
     images: [
       "/images/software/login.png",

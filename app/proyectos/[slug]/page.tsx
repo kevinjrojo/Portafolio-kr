@@ -39,11 +39,11 @@ export default async function ProjectPage({
       {/* Glow de fondo */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#7c5cfc]/8 blur-[120px] pointer-events-none" />
 
-      <div className="max-w-4xl mx-auto px-6 py-10 md:py-16">
+      <div className="max-w-4xl mx-auto px-6 py-5 md:py-5">
         {/* Back */}
         <Link
           href="/#proyectos"
-          className="inline-flex items-center gap-2 text-[13px] text-white/35 hover:text-white/70 transition-colors duration-200 mb-12 group"
+          className="inline-flex items-center gap-2 text-[13px] text-white/50 hover:text-white/70 transition-colors duration-200 mb-12 group"
         >
           <svg
             className="w-4 h-4 transition-transform duration-200 group-hover:-translate-x-0.5"
@@ -68,7 +68,7 @@ export default async function ProjectPage({
             <div className="w-12 h-12 rounded-xl bg-[#7c5cfc]/15 border border-[#7c5cfc]/25 flex items-center justify-center text-2xl shrink-0">
               {project.icon}
             </div>
-            <span className="text-[11px] font-medium tracking-[2px] uppercase text-white/25">
+            <span className="text-[11px] font-medium tracking-[2px] uppercase text-white/50">
               {project.type === "demo" ? "Proyecto con demo" : "Proyecto"}
             </span>
           </div>
@@ -89,7 +89,7 @@ export default async function ProjectPage({
             {project.stack.map((s) => (
               <span
                 key={s}
-                className="text-[11px] px-2.5 py-1 rounded-lg bg-white/5 text-white/40 border border-white/[0.07]"
+                className="text-[11px] px-2.5 py-1 rounded-lg bg-white/5 text-white/50 border border-white/[0.07]"
               >
                 {s}
               </span>
@@ -98,7 +98,7 @@ export default async function ProjectPage({
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-white/5 mb-12" />
+        <div className="w-full h-px bg-white/5 mb-8" />
 
         {/* Slider */}
         <div className="mb-12">
